@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<launch>
+    <include file="$(find atf_status_server)/launch/atf_status_server.launch">
+        <arg name="test_status_list" value="/home/fmw/git/atf_applications/src/atf_applications/atf_test_app_time/test_generated/recording/test_status.yaml"/>
+    </include>
+    <param name="use_sim_time" value="true"/>
+    <param name="test_name" value="ts2_t1_1"/>
+    <param name="test_config" value="test_2"/>
+    <param name="scene_config" value="scene_2"/>
+    <param name="robot_config" value="/home/fmw/git/atf_applications/src/atf_applications/atf_test_app_time/config/robot_2/robot_config.yaml"/>
+    <param name="number_of_tests" value="4"/>
+    <arg name="robot" value="robot_2"/>
+    <arg name="rc_path" value="/home/fmw/git/atf_applications/src/atf_applications/atf_test_app_time/config/"/>
+    <include file="/home/fmw/git/atf_applications/src/atf_applications/atf_test_app_time/launch/application.launch"/>
+    <node name="atf_recorder" output="screen" pkg="atf_recorder" type="recorder_core.py">
+        <param name="/test_config_file" value="/home/fmw/git/atf_applications/src/atf_applications/atf_test_app_time/config/test_config.yaml"/>
+        <param name="/bagfile_output" value="/tmp/atf_test_app_time/data/"/>
+    </node>
+    <include file="/home/fmw/git/atf_applications/src/atf_applications/atf_test_app_time/test/application.test">
+        <arg name="time_limit" value="20.0"/>
+    </include>
+</launch>

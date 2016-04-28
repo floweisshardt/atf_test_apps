@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<launch>
+    <include file="$(find atf_status_server)/launch/atf_status_server.launch">
+        <arg name="test_status_list" value="/home/fmw/git/atf_applications/src/atf_applications/atf_test_app_time/test_generated/analysing/test_status.yaml"/>
+    </include>
+    <param name="use_sim_time" value="true"/>
+    <param name="analysing/test_name" value="ts1_t1_1"/>
+    <param name="analysing/test_config" value="test_1"/>
+    <param name="analysing/test_config_file" value="/home/fmw/git/atf_applications/src/atf_applications/atf_test_app_time/config/test_config.yaml"/>
+    <param name="analysing/result_yaml_output" value=""/>
+    <param name="analysing/result_json_output" value="/tmp/atf_test_app_time/results/"/>
+    <param name="number_of_tests" value="4"/>
+    <test pkg="atf_core" test-name="test_analysing" time-limit="20.0" type="test_builder.py"/>
+    <node args="--delay=5.0 --clock /tmp/atf_test_app_time/data/ts1_t1_1.bag" name="player" output="screen" pkg="rosbag" type="play"/>
+</launch>
