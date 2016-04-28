@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-    <name>atf_test</name>
+    <name>atf_test_app_time</name>
     <version>1.0.0</version>
-    <description>The atf_test package</description>
+    <description>The atf_test_app_time package</description>
 
     <license>LGPL</license>
 

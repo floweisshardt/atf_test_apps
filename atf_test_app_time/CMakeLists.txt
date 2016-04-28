@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(atf_test)
+project(atf_test_app_time)
 
 find_package(catkin REQUIRED COMPONENTS
   atf_core
