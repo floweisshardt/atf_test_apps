@@ -1,1 +1,4 @@
-# empty
+- git:
+    uri: 'git@github.com:ipa-fmw/atf.git'
+    local-name: atf
+    version: master
