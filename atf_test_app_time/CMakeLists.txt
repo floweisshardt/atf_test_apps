@@ -27,7 +27,10 @@ install(PROGRAMS scripts/application.py
 if(CATKIN_ENABLE_TESTING)
     find_package(rostest REQUIRED)
 
-    #add_rostest(test_generated/recording/ts1_t1_1.test)
+    execute_process(
+        COMMAND rosrun atf_core generate_tests.py ${PROJECT_SOURCE_DIR}/config/test_generation_config.yaml ${PROJECT_NAME}
+    )
+
     file(GLOB TESTS_FILES_RECORDING test_generated/recording/*.test)
     file(GLOB TESTS_FILES_ANALYSING test_generated/analysing/*.test)
     foreach(TEST ${TESTS_FILES_RECORDING})
