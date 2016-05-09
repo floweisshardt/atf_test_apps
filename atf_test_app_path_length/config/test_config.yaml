@@ -1,0 +1,11 @@
+# Definition of various tests
+test_1:
+  testblock_1:
+    path_length: [["/world", "/reference1"]]
+  testblock_2:
+    path_length: [[world, reference1],[world, reference2]]
+test_2:
+  testblock_1:
+    path_length: [[world, reference1]]
+  testblock_3:
+    path_length: [[world, reference1]]

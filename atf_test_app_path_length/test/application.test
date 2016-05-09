@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<launch>
+    <arg name="time_limit" />
+    <test pkg="atf_test_app_path_length" test-name="test_name" time-limit="$(arg time_limit)" type="application.py" />
+</launch>
