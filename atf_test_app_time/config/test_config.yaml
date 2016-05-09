@@ -2,8 +2,12 @@
 test_1:
   testblock_1:
     time:
+      groundtruth: 3
+      groundtruth_epsilon: 0.01
   testblock_2:
     time:
+      groundtruth: 5
+      groundtruth_epsilon: 0.01
 test_2:
   testblock_1:
     time:
