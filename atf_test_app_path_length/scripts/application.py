@@ -12,23 +12,23 @@ import sys
 
 class Application:
     def __init__(self):
-        self.testblock_1 = RecordingManager('testblock_1')
-        self.testblock_2 = RecordingManager('testblock_2')
-        self.testblock_3 = RecordingManager('testblock_3')
+        self.testblock_circle = RecordingManager('testblock_circle')
+        self.testblock_quadrat = RecordingManager('testblock_quadrat')
+        self.testblock_all = RecordingManager('testblock_all')
         self.ptf = PublishTf()
 
     def execute(self):
         rospy.loginfo("app start")
         print "app start"
         # Example for recorder usage
-        self.testblock_1.start()
-        self.testblock_3.start()
+        self.testblock_circle.start()
+        self.testblock_all.start()
         self.ptf.pub_circ(radius=1, time=5)
-        self.testblock_1.stop()
-        self.testblock_2.start()
+        self.testblock_circle.stop()
+        self.testblock_quadrat.start()
         self.ptf.pub_quadrat(length=2, time=10)
-        self.testblock_2.stop()
-        self.testblock_3.stop()
+        self.testblock_quadrat.stop()
+        self.testblock_all.stop()
         rospy.loginfo("app end")
 
 class Test(unittest.TestCase):
