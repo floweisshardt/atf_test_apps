@@ -1,21 +1,27 @@
 # Definition of various tests
 test_1:
   testblock_circle:
-    path_length: 
-      - [world, reference1]
+    path_length:
+      root_frame: world
+      measured_frame: reference1
+      groundtruth: 6.28
+      groundtruth_epsilon: 0.1
   testblock_quadrat:
-    path_length: 
-      - [world, reference1]
-  testblock_all:
-    path_length: 
-      - [world, reference1]
-      - [reference1, reference2]
-      - [reference1, reference3]
-      - [reference1, reference4]
-test_2:
-  testblock_circle:
-    path_length: 
-      - [world, reference1]
+    path_length:
+      root_frame: world
+      measured_frame: reference1
+      groundtruth: 8.0
+      groundtruth_epsilon: 0.1
   testblock_all:
     path_length:
-      - [world, reference1]
+      root_frame: world
+      measured_frame: reference4
+test_2:
+  testblock_circle:
+    path_length:
+      root_frame: world
+      measured_frame: reference1
+  testblock_all:
+    path_length:
+      root_frame: world
+      measured_frame: reference1
