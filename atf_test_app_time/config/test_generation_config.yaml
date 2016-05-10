@@ -1,4 +1,4 @@
-test_suite_file: "config/test_suite.yaml"                       	# Path of the test_suite file
+test_suite_file: "config/test_suite.yaml"                           # Path of the test_suite file
 test_config_file: "config/test_config.yaml"                         # Path of the test_config file
 robot_config_path: "config/"                                        # Folder which contains the robot_config files
 test_repetitions: 5                                                 # Number of repetitions per test
