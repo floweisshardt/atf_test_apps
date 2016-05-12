@@ -1,0 +1,46 @@
+# Definition of various tests
+test_1:
+  testblock_1:
+    publish_rate:
+      - topic: /topic1
+        groundtruth: 11
+        groundtruth_epsilon: 1
+      - topic: "topic2"
+        groundtruth: 22
+        groundtruth_epsilon: 1
+  testblock_2:
+    publish_rate:
+      - topic: /topic3
+        groundtruth: 33
+        groundtruth_epsilon: 1
+#test_2:
+#  testblock_1:
+#    publish_rate:
+#  testblock_3:
+#    publish_rate:
+
+
+
+
+### for interface config
+#test_1:
+#  testblock_1:
+#    publish_rate:
+#      - name: topic1
+#        interface_type: topic
+#        msg_type: std_msgs/String
+#        groundtruth: 10
+#        groundtruth_epsilon: 1
+#      - name: topic2
+#        interface_type: topic
+#        msg_type: std_msgs/Int32
+#        groundtruth: 20
+#        groundtruth_epsilon: 1
+#  testblock_2:
+#    publish_rate:
+#      name: topic3
+#      interface_type: topic
+#      msg_type: std_msgs/Float32
+#      groundtruth: 30
+#      groundtruth_epsilon: 1
+

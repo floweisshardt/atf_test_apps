@@ -1,0 +1,18 @@
+test_suite_file: "config/test_suite.yaml"                           # Path of the test_suite file
+test_config_file: "config/test_config.yaml"                         # Path of the test_config file
+robot_config_path: "config/"                                        # Folder which contains the robot_config files
+test_repetitions: 5                                                 # Number of repetitions per test
+
+test_application_path: "test/application.test"                      # Path of the application test file
+additional_launch_file: "launch/application.launch"                 # Path of the additional launch file
+
+bagfile_output: "/tmp/atf_test_app_publish_rate/data/"              # Folder for bagfile output
+result_json_output: "/tmp/atf_test_app_publish_rate/results_json/"  # Folder for the json files output
+result_yaml_output: "/tmp/atf_test_app_publish_rate/results_yaml/"  # Folder for the yaml files output
+
+upload_data: false
+upload_result: true
+
+time_limit_recording: 20.0                                          # Time limit in seconds for recording
+time_limit_analysing: 20.0                                          # Time limit in seconds for analysing
+time_limit_uploading: 60.0                                          # Time limit in seconds for uploading
