@@ -15,7 +15,6 @@ class Application:
         self.testblock_3 = RecordingManager('testblock_3')
 
     def execute(self):
-        # Example for recorder usage
         self.testblock_1.start()
         self.testblock_3.start()
         rospy.sleep(3)
@@ -37,4 +36,4 @@ class Test(unittest.TestCase):
 
 if __name__ == '__main__':
     rospy.init_node('test_name')
-    rostest.rosrun('application', 'test_application', Test, sysargs=None)
+    rostest.rosrun('application', 'recording', Test, sysargs=None)
