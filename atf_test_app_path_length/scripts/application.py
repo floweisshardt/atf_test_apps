@@ -17,13 +17,18 @@ class Application:
         self.ptf = PublishTf()
 
     def execute(self):
-        self.testblock_circle.start()
         self.testblock_all.start()
+
+        # circle
+        self.testblock_circle.start()
         self.ptf.pub_circ(radius=1, time=5)
         self.testblock_circle.stop()
+
+        # quadrat
         self.testblock_quadrat.start()
         self.ptf.pub_quadrat(length=2, time=10)
         self.testblock_quadrat.stop()
+
         self.testblock_all.stop()
 
 class Test(unittest.TestCase):
