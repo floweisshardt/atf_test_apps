@@ -13,12 +13,14 @@ test_1:
       - topic: /topic3
         groundtruth: 33
         groundtruth_epsilon: 1
-#test_2:
-#  testblock_1:
-#    publish_rate:
-#  testblock_3:
-#    publish_rate:
-
+test_2:
+  testblock_1:
+    publish_rate:
+      - topic: /topic1
+      - topic: "topic2"
+  testblock_3:
+    publish_rate:
+      - topic: /topic3
 
 
 
