@@ -1,5 +1,0 @@
-<?xml version="1.0" ?>
-<launch>
-    <arg name="time_limit" />
-    <test pkg="atf_test_app_publish_rate" test-name="application" time-limit="$(arg time_limit)" type="application.py" />
-</launch>

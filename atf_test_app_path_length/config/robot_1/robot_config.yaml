@@ -1,8 +1,6 @@
 path_length:                                          # Topics for the metric 'path_length'
   topics:
     - "/tf"
-    - "/tf2"
-    - "/tf3"
 robot_bringup_launch: ""          # Path to the robot bringup launch file
 wait_for_topics: []                                      # Names of the topics to wait for before beginning the test
 wait_for_services: []                                    # Names of the services to wait for before beginning the test
