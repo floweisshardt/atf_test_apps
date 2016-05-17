@@ -9,12 +9,11 @@ import rospy
 import rostest
 import rostopic
 from atf_recorder import RecordingManager
-from tf import transformations, TransformListener, TransformBroadcaster
+from tf import transformations, TransformBroadcaster
 
 
 class PublishTf:
     def __init__(self):
-        self.listener = TransformListener()
         self.br = TransformBroadcaster()
         self.pub_freq = 100.0
         self.parent_frame_id = "world"
