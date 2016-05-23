@@ -23,6 +23,7 @@ test_2:
       - node: publisher1
       - node: subscriber1
   testblock_2:
+    interface:
       - node: publisher1
       - node: subscriber1
 # TODO: pub-sub, service server, service client?, action server, actionclient?
