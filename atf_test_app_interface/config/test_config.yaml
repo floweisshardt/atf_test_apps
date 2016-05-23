@@ -17,13 +17,12 @@ test_1:
         subscribers: 
           - [topic2, std_msgs/Int32]
 
-
 test_2:
   testblock_1:
-	interface:
-	  - node: publisher1
+    interface:
+      - node: publisher1
       - node: subscriber1
   testblock_2:
-	  - node: publisher1
+      - node: publisher1
       - node: subscriber1
 # TODO: pub-sub, service server, service client?, action server, actionclient?
