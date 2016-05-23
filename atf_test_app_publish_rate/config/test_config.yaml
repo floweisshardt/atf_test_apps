@@ -21,28 +21,3 @@ test_2:
   testblock_3:
     publish_rate:
       - topic: /topic3
-
-
-
-### for interface config
-#test_1:
-#  testblock_1:
-#    publish_rate:
-#      - name: topic1
-#        interface_type: topic
-#        msg_type: std_msgs/String
-#        groundtruth: 10
-#        groundtruth_epsilon: 1
-#      - name: topic2
-#        interface_type: topic
-#        msg_type: std_msgs/Int32
-#        groundtruth: 20
-#        groundtruth_epsilon: 1
-#  testblock_2:
-#    publish_rate:
-#      name: topic3
-#      interface_type: topic
-#      msg_type: std_msgs/Float32
-#      groundtruth: 30
-#      groundtruth_epsilon: 1
-
