@@ -8,6 +8,7 @@ test_1:
       - node: subscriber1
         subscribers: 
           - [topic2, std_msgs/Int32]
+
   testblock_2:
     interface:
       - node: publisher1
@@ -26,4 +27,4 @@ test_2:
     interface:
       - node: publisher1
       - node: subscriber1
-# TODO: pub-sub, service server, service client?, action server, actionclient?
+# TODO: service server, service client?, action server, actionclient?
