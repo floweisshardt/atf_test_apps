@@ -4,15 +4,15 @@ test_1:
     publish_rate:
       - topic: /topic1
         groundtruth: 11
-        groundtruth_epsilon: 1
+        groundtruth_epsilon: 3
       - topic: "topic2"
         groundtruth: 22
-        groundtruth_epsilon: 1
+        groundtruth_epsilon: 3
   testblock_2:
     publish_rate:
       - topic: /topic3
         groundtruth: 33
-        groundtruth_epsilon: 1
+        groundtruth_epsilon: 3
 test_2:
   testblock_1:
     publish_rate:
