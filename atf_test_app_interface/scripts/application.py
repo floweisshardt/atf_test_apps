@@ -1,8 +1,5 @@
 #!/usr/bin/python
 import unittest
-import yaml
-from subprocess import call
-
 import rospy
 import rostest
 from atf_recorder import RecordingManager
