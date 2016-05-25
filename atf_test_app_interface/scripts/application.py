@@ -8,17 +8,14 @@ class Application:
     def __init__(self):
         self.testblock_1 = RecordingManager('testblock_1')
         self.testblock_2 = RecordingManager('testblock_2')
-        self.testblock_3 = RecordingManager('testblock_3')
 
     def execute(self):
         self.testblock_1.start()
-        self.testblock_3.start()
-        rospy.sleep(3)
+        rospy.sleep(1)
         self.testblock_1.stop()
         self.testblock_2.start()
-        rospy.sleep(5)
+        rospy.sleep(1)
         self.testblock_2.stop()
-        self.testblock_3.stop()
 
 class Test(unittest.TestCase):
     def setUp(self):

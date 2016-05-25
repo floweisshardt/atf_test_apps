@@ -26,4 +26,3 @@ after_failure:
   - cd $CATKIN_WS
   - source devel/setup.bash
   - catkin_test_results --verbose
-  - cat build/Testing/Temporary/LastTest.log

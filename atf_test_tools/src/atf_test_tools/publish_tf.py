@@ -1,16 +1,8 @@
 #!/usr/bin/env python
 import math
 import sys
-import unittest
-import yaml
-from subprocess import call
-
 import rospy
-import rostest
-import rostopic
-from atf_recorder import RecordingManager
 from tf import transformations, TransformBroadcaster
-
 
 class PublishTf:
     def __init__(self):
