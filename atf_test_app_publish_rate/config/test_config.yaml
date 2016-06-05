@@ -1,6 +1,6 @@
 # Definition of various tests
 test_1:
-  testblock_1:
+  testblock_3s:
     publish_rate:
       - topic: /topic1
         groundtruth: 11
@@ -8,16 +8,21 @@ test_1:
       - topic: "topic2"
         groundtruth: 22
         groundtruth_epsilon: 3
-  testblock_2:
+  testblock_5s:
     publish_rate:
       - topic: /topic3
         groundtruth: 33
         groundtruth_epsilon: 3
+  testblock_8s:
+    publish_rate: []
+
 test_2:
-  testblock_1:
+  testblock_3s:
     publish_rate:
       - topic: /topic1
       - topic: "topic2"
-  testblock_3:
+  testblock_5s:
     publish_rate:
       - topic: /topic3
+  testblock_8s:
+    publish_rate: []
