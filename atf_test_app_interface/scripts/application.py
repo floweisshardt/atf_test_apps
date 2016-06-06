@@ -19,7 +19,7 @@ class Application:
 
         self.atf.start("testblock_2")
         rospy.sleep(1)
-        self.atf.stop"testblock_2")
+        self.atf.stop("testblock_2")
 
         self.atf.shutdown()
 
