@@ -26,7 +26,7 @@ class Application:
         self.ptf.pub_quadrat(length=2, time=10)
         self.atf.stop("testblock_quadrat")
 
-        self.atf.stop("testblock_all").stop()
+        self.atf.stop("testblock_all")
 
         self.atf.shutdown()
 
