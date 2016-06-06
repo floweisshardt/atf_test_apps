@@ -2,26 +2,26 @@
 import unittest
 import rospy
 import rostest
+import sys
+
 from atf_core import ATF
+
 
 class Application:
     def __init__(self):
         self.atf = ATF()
-        self.atf.add_testblock('testblock_1')
-        self.atf.add_testblock('testblock_2')
 
     def execute(self):
-        self.atf.start()
 
-        self.atf.testblocks["testblock_1"].start()
+        self.atf.start("testblock_1")
         rospy.sleep(1)
-        self.atf.testblocks["testblock_1"].stop()
+        self.atf.stop("testblock_1")
 
-        self.atf.testblocks["testblock_2"].start()
+        self.atf.start("testblock_2")
         rospy.sleep(1)
-        self.atf.testblocks["testblock_2"].stop()
+        self.atf.stop"testblock_2")
 
-        self.atf.stop()
+        self.atf.shutdown()
 
 class Test(unittest.TestCase):
     def setUp(self):
@@ -35,6 +35,8 @@ class Test(unittest.TestCase):
 
 if __name__ == '__main__':
     rospy.init_node('test_name')
-    #app = Application()
-    #app.execute()
-    rostest.rosrun('application', 'recording', Test, sysargs=None)
+    if "standalone" in sys.argv:
+        app = Application()
+        app.execute()
+    else:
+        rostest.rosrun('application', 'recording', Test, sysargs=None)

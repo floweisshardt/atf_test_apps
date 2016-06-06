@@ -2,35 +2,33 @@
 import unittest
 import rospy
 import rostest
+import sys
+
 from atf_core import ATF
 from atf_test_tools import PublishTf
 
 class Application:
     def __init__(self):
         self.atf = ATF()
-        self.atf.add_testblock('testblock_circle')
-        self.atf.add_testblock('testblock_quadrat')
-        self.atf.add_testblock('testblock_all')
         self.ptf = PublishTf()
 
     def execute(self):
-        self.atf.start()
 
-        self.atf.testblocks["testblock_all"].start()
+        self.atf.start("testblock_all")
 
         # circle
-        self.atf.testblocks["testblock_circle"].start()
+        self.atf.start("testblock_circle")
         self.ptf.pub_circ(radius=1, time=5)
-        self.atf.testblocks["testblock_circle"].stop()
+        self.atf.stop("testblock_circle")
 
         # quadrat
-        self.atf.testblocks["testblock_quadrat"].start()
+        self.atf.start("testblock_quadrat")
         self.ptf.pub_quadrat(length=2, time=10)
-        self.atf.testblocks["testblock_quadrat"].stop()
+        self.atf.stop("testblock_quadrat")
 
-        self.atf.testblocks["testblock_all"].stop()
+        self.atf.stop("testblock_all").stop()
 
-        self.atf.stop()
+        self.atf.shutdown()
 
 class Test(unittest.TestCase):
     def setUp(self):
@@ -44,6 +42,8 @@ class Test(unittest.TestCase):
 
 if __name__ == '__main__':
     rospy.init_node('test_name')
-    #app = Application()
-    #app.execute()
-    rostest.rosrun('application', 'recording', Test, sysargs=None)
+    if "standalone" in sys.argv:
+        app = Application()
+        app.execute()
+    else:
+        rostest.rosrun('application', 'recording', Test, sysargs=None)
