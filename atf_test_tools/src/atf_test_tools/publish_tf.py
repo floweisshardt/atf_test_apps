@@ -7,7 +7,7 @@ from tf import transformations, TransformBroadcaster
 class PublishTf:
     def __init__(self):
         self.br = TransformBroadcaster()
-        self.pub_freq = 100.0
+        self.pub_freq = 20.0
         self.parent_frame_id = "world"
         self.child1_frame_id = "reference1"
         self.child2_frame_id = "reference2"
@@ -33,8 +33,15 @@ class PublishTf:
 
     def pub_tf(self, parent_frame_id, child1_frame_id, xyz=[0, 0, 0], rpy=[0, 0, 0]):
         self.check_for_ctrlc()
-        self.br.sendTransform((xyz[0], xyz[1], xyz[2]), transformations.quaternion_from_euler(
-            rpy[0], rpy[1], rpy[2]), rospy.Time.now(), child1_frame_id, parent_frame_id)
+        start = rospy.Time.now()
+        try:
+            self.br.sendTransform((xyz[0], xyz[1], xyz[2]), transformations.quaternion_from_euler(
+                rpy[0], rpy[1], rpy[2]), rospy.Time.now(), child1_frame_id, parent_frame_id)
+        except rospy.ROSException:
+            rospy.logdebug("could not send transform")
+        stop = rospy.Time.now()
+        if (stop-start).to_sec() > 1/self.pub_freq:
+            rospy.logwarn("Publishing tf took longer than specified loop rate " + str((stop-start).to_sec()) + ", should be less than " + str(1/self.pub_freq))
 
     def pub_line(self, length=1, time=1):
         rospy.loginfo("Line")
@@ -81,7 +88,6 @@ class PublishTf:
             self.pub_tf(self.parent_frame_id, self.child1_frame_id, [0, (1 - t) * length, 0])
             rate.sleep()
 
-    @staticmethod
-    def check_for_ctrlc():
+    def check_for_ctrlc(self):
         if rospy.is_shutdown():
             sys.exit()
