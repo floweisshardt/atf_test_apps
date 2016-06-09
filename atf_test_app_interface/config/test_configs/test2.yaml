@@ -1,0 +1,9 @@
+testblock_1:
+  interface:
+    - node: publisher1
+    - node: subscriber1
+testblock_2:
+  interface:
+    - node: publisher1
+    - node: subscriber1
+# TODO: service server, service client?, action server, actionclient?
