@@ -1,5 +1,5 @@
 # atf_test_apps
-Repository with test apps for the ATF (Automated Test Framework)
+Repository with test apps for the ATF [Automated Test Framework](https://github.com/ipa-fmw/atf).
 
 CI-Status ```atf_test_apps/master```: [![Build Status](https://travis-ci.org/ipa-fmw/atf_test_apps.svg?branch=master)](https://travis-ci.org/ipa-fmw/atf_test_apps)
 
