@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Add all launch files that you want to run additionally to your robot bringup like moveit, etc... -->
+    <node name="publisher1" pkg="rostopic" type="rostopic" args="pub /topic1 std_msgs/String 'data: 'hello'' -r10" output="screen"/>
+    
+    <node name="publisher2" pkg="rostopic" type="rostopic" args="pub /topic2 std_msgs/Int32 'data: '123'' -r10" output="screen"/>
+    <node name="subscriber1" pkg="rostopic" type="rostopic" args="echo /topic2" output="log"/>
+</launch>
