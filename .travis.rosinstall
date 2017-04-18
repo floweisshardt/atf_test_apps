@@ -2,7 +2,3 @@
     uri: 'https://github.com/ipa-fmw/atf.git'
     local-name: atf
     version: master
-- git:
-    uri: 'https://github.com/ros/ros_comm.git'
-    local-name: ros_comm
-    version: indigo-devel
