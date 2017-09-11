@@ -13,7 +13,7 @@ class Application:
 
     def execute(self):
 
-        self.atf.start("testblock_8s")
+        #self.atf.start("testblock_8s")
         self.atf.start("testblock_3s")
 
         rospy.sleep(3)
