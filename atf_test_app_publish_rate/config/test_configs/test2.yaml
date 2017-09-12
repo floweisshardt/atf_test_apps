@@ -5,5 +5,6 @@ testblock_3s:
 testblock_5s:
   publish_rate:
     - topic: /topic3
-testblock_8s:
-  publish_rate: []
+#testblock_8s:
+#  publish_rate:
+#    - topic: /topic3
