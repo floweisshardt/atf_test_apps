@@ -24,4 +24,5 @@ install(PROGRAMS scripts/application.py
 #############
 ## Testing ##
 #############
+roslaunch_add_file_check(launch)
 atf_test()

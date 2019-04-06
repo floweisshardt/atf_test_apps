@@ -4,13 +4,12 @@ import rospy
 import rostest
 import sys
 
-#from atf_core import ATF
-from atf_core.atf_controller import ATFController
+import atf_core
 
 
 class Application:
     def __init__(self):
-        self.atf = ATFController()
+        self.atf = atf_core.ATF()
         #TODO WAIT FOR ATF to be initialized inside ATFController 
         rospy.sleep(3)
 
