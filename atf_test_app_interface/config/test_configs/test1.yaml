@@ -6,7 +6,6 @@ testblock_1:
     - node: subscriber1
       subscribers: 
         - [topic2, std_msgs/Int32]
-
 testblock_2:
   interface:
     - node: publisher1

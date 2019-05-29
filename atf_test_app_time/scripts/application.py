@@ -6,15 +6,12 @@ import sys
 
 import atf_core
 
-
 class Application:
     def __init__(self):
         self.atf = atf_core.ATF()
-        #TODO WAIT FOR ATF to be initialized inside ATFController 
         rospy.sleep(3)
 
     def execute(self):
-        print "--- start ---"
 
         self.atf.start("testblock_8s")
         self.atf.start("testblock_3s")
@@ -28,7 +25,6 @@ class Application:
 
         self.atf.stop("testblock_5s")
         self.atf.stop("testblock_8s")
-        print "--- end ---"
 
         #self.atf.shutdown()
 

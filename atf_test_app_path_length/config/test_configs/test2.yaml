@@ -1,14 +1,18 @@
 testblock_circle:
   path_length:
-    - root_frame: world
+    - topic: /tf
+      root_frame: world
       measured_frame: reference1
 testblock_quadrat:
   path_length:
-    - root_frame: world
+    - topic: /tf
+      root_frame: world
       measured_frame: reference1
 testblock_all:
   path_length:
-    - root_frame: world
+    - topic: /tf
+      root_frame: world
       measured_frame: reference1
-    - root_frame: world
+    - topic: /tf
+      root_frame: world
       measured_frame: reference4
