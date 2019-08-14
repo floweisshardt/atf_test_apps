@@ -9,7 +9,6 @@ import atf_core
 class Application:
     def __init__(self):
         self.atf = atf_core.ATF()
-        rospy.sleep(3)
 
     def execute(self):
 

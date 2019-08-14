@@ -10,7 +10,6 @@ from atf_test_tools import PublishTf
 class Application:
     def __init__(self):
         self.atf = atf_core.ATF()
-        rospy.sleep(3)
         self.ptf = PublishTf()
 
     def execute(self):
