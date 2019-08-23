@@ -25,7 +25,7 @@ class Application:
         self.atf.stop("testblock_5s")
         #self.atf.stop("testblock_8s")
 
-        #self.atf.shutdown()
+        self.atf.shutdown()
 
 if __name__ == '__main__':
     rospy.init_node('test_app')
