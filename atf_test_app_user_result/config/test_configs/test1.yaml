@@ -1,0 +1,12 @@
+testblock_3s:
+  user_result:
+    - groundtruth: 0.8
+      groundtruth_epsilon: 0.2
+testblock_5s:
+  user_result:
+    - groundtruth: 0.8
+      groundtruth_epsilon: 0.2
+testblock_8s:
+  user_result:
+    - groundtruth: 0.8
+      groundtruth_epsilon: 0.2
