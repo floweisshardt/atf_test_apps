@@ -1,24 +1,29 @@
 testblock_circle:
   path_length:
-    - topic: /tf
+    - topics: [/tf]
       root_frame: world
       measured_frame: reference1
       groundtruth: 6.28
       groundtruth_epsilon: 1.5
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
+      groundtruth: 6.28
+      groundtruth_epsilon: 1.5
 testblock_quadrat:
   path_length:
-    - topic: /tf
+    - topics: [/tf]
       root_frame: world
       measured_frame: reference1
       groundtruth: 8.0
       groundtruth_epsilon: 1.5
 testblock_all:
   path_length:
-    - topic: /tf
+    - topics: [/tf]
       root_frame: world
       measured_frame: reference1
       groundtruth: 14.28
       groundtruth_epsilon: 1.5
-    - topic: /tf
+    - topics: [/tf]
       root_frame: world
       measured_frame: reference4
