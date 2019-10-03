@@ -12,7 +12,7 @@ class Application:
 
     def execute(self):
 
-        #self.atf.start("testblock_8s")
+        self.atf.start("testblock_8s")
         self.atf.start("testblock_3s")
 
         rospy.sleep(3)
@@ -23,8 +23,9 @@ class Application:
         rospy.sleep(5)
 
         self.atf.stop("testblock_5s")
-        #self.atf.stop("testblock_8s")
+        self.atf.stop("testblock_8s")
 
+        # shutdown atf
         self.atf.shutdown()
 
 if __name__ == '__main__':

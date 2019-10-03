@@ -1,4 +1,4 @@
-testblock_1:
+testblock_3s:
   interface:
     - node: publisher1
       publishers: 
@@ -6,7 +6,15 @@ testblock_1:
     - node: subscriber1
       subscribers: 
         - [topic2, std_msgs/Int32]
-testblock_2:
+testblock_5s:
+  interface:
+    - node: publisher1
+      publishers: 
+        - [topic1, std_msgs/String]
+    - node: subscriber1
+      subscribers: 
+        - [topic2, std_msgs/Int32]
+testblock_8s:
   interface:
     - node: publisher1
       publishers: 

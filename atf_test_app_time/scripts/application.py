@@ -25,6 +25,7 @@ class Application:
         self.atf.stop("testblock_5s")
         self.atf.stop("testblock_8s")
 
+        # shutdown atf
         self.atf.shutdown()
 
 if __name__ == '__main__':

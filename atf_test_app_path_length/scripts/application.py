@@ -28,6 +28,7 @@ class Application:
 
         self.atf.stop("testblock_all")
 
+        # shutdown atf
         self.atf.shutdown()
 
 if __name__ == '__main__':
