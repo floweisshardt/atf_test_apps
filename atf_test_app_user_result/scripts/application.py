@@ -5,6 +5,7 @@ import rostest
 import sys
 
 import atf_core
+from atf_msgs.msg import MetricResult
 
 class Application:
     def __init__(self):
@@ -17,21 +18,23 @@ class Application:
 
         rospy.sleep(3)
 
-        details = []
-        self.atf.set_user_result("testblock_3s", 0.8, details)
-
-        self.atf.stop("testblock_3s")
+        # user result
+        metric_result = MetricResult()
+        metric_result.data = 0.8
+        metric_result.groundtruth_result = True
+        metric_result.groundtruth_error_message = "all ok in application of atf_test"
+        self.atf.stop("testblock_3s", metric_result) # user result with groundtruth result
         self.atf.start("testblock_5s")
 
         rospy.sleep(5)
 
-        details = []
-        self.atf.set_user_result("testblock_5s", 0.8, details)
-        self.atf.set_user_result("testblock_8s", 0.8, details)
+        # user result
+        metric_result = MetricResult()
+        metric_result.data = 0.7
+        self.atf.stop("testblock_5s", metric_result) # user result without groundtruth result
+        self.atf.stop("testblock_8s") # no user result
 
-        self.atf.stop("testblock_5s")
-        self.atf.stop("testblock_8s")
-
+        # shutdown atf
         self.atf.shutdown()
 
 if __name__ == '__main__':

@@ -8,5 +8,5 @@ testblock_5s:
       groundtruth_epsilon: 0.2
 testblock_8s:
   user_result:
-    - groundtruth: 0.8
-      groundtruth_epsilon: 0.2
+    - groundtruth: 0.0
+      groundtruth_epsilon: 0.0
