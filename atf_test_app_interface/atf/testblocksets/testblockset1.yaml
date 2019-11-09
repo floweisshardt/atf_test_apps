@@ -1,3 +1,4 @@
+# with groundtruth
 testblock_3s:
   interface:
     - node: publisher1
