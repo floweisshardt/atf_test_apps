@@ -1,3 +1,4 @@
+# with groundtruth
 testblock_3s:
   time:
     - groundtruth: 3
