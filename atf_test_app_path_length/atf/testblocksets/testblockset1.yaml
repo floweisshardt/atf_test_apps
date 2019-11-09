@@ -1,3 +1,4 @@
+# with groundtruth
 testblock_circle:
   path_length:
     - topics: [/tf]
