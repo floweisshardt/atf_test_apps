@@ -30,4 +30,4 @@ testsuites:                # You have to define at least one testsuite
     testblocksets:         # You have to define at least one testblockset
       - testblockset1
       - testblockset2
-    repetitions: 1         # Number of repetitions per test
+    repetitions: 5         # Number of repetitions per test
