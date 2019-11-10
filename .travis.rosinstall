@@ -1,4 +1,4 @@
 - git:
-    uri: 'https://github.com/floweisshardt/atf.git'
     local-name: atf
+    uri: https://github.com/floweisshardt/atf
     version: master

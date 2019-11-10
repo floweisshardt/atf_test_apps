@@ -1,0 +1,22 @@
+# without groundtruth
+testblock_circle:
+  path_length:
+    - topics: [/tf]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
+testblock_quadrat:
+  path_length:
+    - topics: [/tf]
+      root_frame: world
+      measured_frame: reference1
+testblock_all:
+  path_length:
+    - topics: [/tf]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf]
+      root_frame: world
+      measured_frame: reference4
