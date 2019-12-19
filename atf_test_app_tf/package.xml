@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>atf_test_app_tf</name>
+    <version>0.1.0</version>
+    <description>Test app that uses the ATF tf metrics.</description>
+
+    <maintainer email="florian.weisshardt@mojin-robotics.de">Florian Weisshardt</maintainer>
+    <maintainer email="bjoern.eistel@mojin-robotics.de">Björn Eistel</maintainer>
+
+    <author email="florian.weisshardt@mojin-robotics.de">Florian Weisshardt</author>
+    <author email="bjoern.eistel@mojin-robotics.de">Björn Eistel</author>
+
+    <license>Apache 2.0</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <depend>atf_core</depend>
+    <depend>atf_test_tools</depend>
+    <depend>roslaunch</depend>
+    <depend>rospy</depend>
+    <depend>rostopic</depend>
+    <depend>tf2_ros</depend>
+
+    <test_depend>rostest</test_depend>
+
+</package>
