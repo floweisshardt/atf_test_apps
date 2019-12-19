@@ -1,11 +1,12 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(atf_test_app_path_length)
+project(atf_test_app_tf)
 
 find_package(catkin REQUIRED COMPONENTS
   atf_core
   atf_test_tools
   roslaunch
   rospy
+  rostopic
 )
 catkin_package(
    CATKIN_DEPENDS rospy

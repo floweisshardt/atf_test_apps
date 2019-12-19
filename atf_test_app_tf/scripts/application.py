@@ -1,8 +1,5 @@
 #!/usr/bin/python
-import unittest
 import rospy
-import rostest
-import sys
 
 import atf_core
 from atf_test_tools import PublishTf
@@ -13,13 +10,20 @@ class Application:
         self.ptf = PublishTf()
 
     def execute(self):
-
         self.atf.start("testblock_all")
 
         # circle
         self.atf.start("testblock_circle")
-        self.ptf.pub_circ(radius=1, time=5)
+        # FIXME: due to timing problem the first tf message is sometimes omitted
+        #        so next line (pub_zero) is used as a workaround
+        self.ptf.pub_zero(doSleep=True)
+        self.ptf.pub_circ(radius=1, time=10)
         self.atf.stop("testblock_circle")
+
+        # line
+        self.atf.start("testblock_line")
+        self.ptf.pub_line(length=2, time=5)
+        self.atf.stop("testblock_line")
 
         # quadrat
         self.atf.start("testblock_quadrat")

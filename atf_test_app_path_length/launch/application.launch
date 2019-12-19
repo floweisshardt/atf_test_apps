@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-    <!-- Add all launch files that you want to run additionally to your robot bringup like moveit, etc... -->
-    <node pkg="tf2_ros" type="static_transform_publisher" name="reference1_static_transform_publisher" args="1 0 0 0 0 0 reference1 reference1_static" />
-
-</launch>
