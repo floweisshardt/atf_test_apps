@@ -7,7 +7,7 @@ app_executable: application.py                                      # Name of th
 app_launch_file: launch/application.launch                          # Path of the application's launch file
 
 bagfile_output: /tmp/atf_test_app_user_result/data/                 # Folder for bagfile output
-txt_output: /tmp/atf_test_app_time/results_txt/                     # Folder for the txt files output
+txt_output: /tmp/atf_test_app_user_result/results_txt/                     # Folder for the txt files output
 json_output: /tmp/atf_test_app_user_result/results_json/            # Folder for the json files output
 yaml_output: /tmp/atf_test_app_user_result/results_yaml/            # Folder for the yaml files output
 

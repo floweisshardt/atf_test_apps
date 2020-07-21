@@ -1,7 +1,7 @@
 # without groundtruth
 testblock_3s:
-  time: []
+  time: [{}]
 testblock_5s:
-  time: []
+  time: [{}]
 testblock_8s:
-  time: []
+  time: [{}]

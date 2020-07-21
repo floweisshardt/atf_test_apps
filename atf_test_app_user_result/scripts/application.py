@@ -21,8 +21,8 @@ class Application:
         # user result
         metric_result = MetricResult()
         metric_result.data.data = 0.8
-        metric_result.groundtruth_result = True
-        metric_result.groundtruth_error_message = "all ok in application of atf_test"
+        metric_result.groundtruth.result = True
+        metric_result.groundtruth.error_message = "all ok in application of atf_test"
         self.atf.stop("testblock_3s", metric_result) # user result with groundtruth result
         self.atf.start("testblock_5s")
 
