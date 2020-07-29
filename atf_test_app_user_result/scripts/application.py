@@ -20,7 +20,7 @@ class Application:
 
         # user result
         metric_result = MetricResult()
-        metric_result.data.data = 0.8
+        metric_result.data.data = 0.83
         metric_result.groundtruth.result = True
         metric_result.groundtruth.error_message = "all ok in application of atf_test"
         self.atf.stop("testblock_3s", metric_result) # user result with groundtruth result
@@ -30,9 +30,12 @@ class Application:
 
         # user result
         metric_result = MetricResult()
-        metric_result.data.data = 0.7
+        metric_result.data.data = 0.85
         self.atf.stop("testblock_5s", metric_result) # user result without groundtruth result
-        self.atf.stop("testblock_8s") # no user result
+
+        metric_result = MetricResult()
+        metric_result.groundtruth.result = True
+        self.atf.stop("testblock_8s", metric_result) # empty but successfull user result
 
         # shutdown atf
         self.atf.shutdown()
