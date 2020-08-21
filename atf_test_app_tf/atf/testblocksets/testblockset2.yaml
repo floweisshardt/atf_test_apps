@@ -14,14 +14,41 @@ testblock_circle:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
+  tf_velocity_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
+  tf_acceleration_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
+  tf_jerk_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
   tf_distance_translation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
   tf_distance_rotation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
 testblock_line:
   tf_length_translation:
     - topics: [/tf]
@@ -31,6 +58,27 @@ testblock_line:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
+  tf_velocity_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
+  tf_acceleration_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
+  tf_jerk_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
   tf_distance_translation:
     - topics: [/tf]
       root_frame: world
@@ -48,6 +96,27 @@ testblock_quadrat:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
+  tf_velocity_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
+  tf_acceleration_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
+  tf_jerk_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
   tf_distance_translation:
     - topics: [/tf]
       root_frame: world
@@ -71,6 +140,27 @@ testblock_all:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference4
+  tf_velocity_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
+  tf_acceleration_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
+  tf_jerk_translation:
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1
+    - topics: [/tf, /tf_static]
+      root_frame: world
+      measured_frame: reference1_static
   tf_distance_translation:
     - topics: [/tf]
       root_frame: world
