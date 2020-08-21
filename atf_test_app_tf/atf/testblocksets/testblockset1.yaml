@@ -204,7 +204,7 @@ testblock_all:
       root_frame: world
       measured_frame: reference4
       groundtruth: 35.0
-      groundtruth_epsilon: 1.0
+      groundtruth_epsilon: 1.9
   tf_length_rotation:
     - topics: [/tf]
       root_frame: world
@@ -242,13 +242,13 @@ testblock_all:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth: 4.0
+      groundtruth_epsilon: 3.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth: 4.0
+      groundtruth_epsilon: 3.999
   tf_distance_translation:
     - topics: [/tf]
       root_frame: world
