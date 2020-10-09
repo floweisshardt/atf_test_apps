@@ -5,7 +5,7 @@ import rostest
 import sys
 
 import atf_core
-from atf_msgs.msg import MetricResult
+from atf_msgs.msg import MetricResult, Groundtruth
 
 class Application:
     def __init__(self):
@@ -21,7 +21,7 @@ class Application:
         # user result
         metric_result = MetricResult()
         metric_result.data.data = 0.83
-        metric_result.groundtruth.result = True
+        metric_result.groundtruth.result = Groundtruth.SUCCEEDED
         metric_result.groundtruth.error_message = "all ok in application of atf_test"
         self.atf.stop("testblock_3s", metric_result) # user result with groundtruth result
         self.atf.start("testblock_5s")
@@ -34,7 +34,7 @@ class Application:
         self.atf.stop("testblock_5s", metric_result) # user result without groundtruth result
 
         metric_result = MetricResult()
-        metric_result.groundtruth.result = True
+        metric_result.groundtruth.result = Groundtruth.SUCCEEDED
         self.atf.stop("testblock_8s", metric_result) # empty but successfull user result
 
         # shutdown atf
