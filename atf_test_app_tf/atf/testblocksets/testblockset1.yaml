@@ -4,260 +4,306 @@ testblock_circle:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 6.283
-      groundtruth_epsilon: 0.001
+      groundtruth:
+        data: 6.283
+        epsilon: 0.001
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 6.283
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 6.283
+        epsilon: 0.1
   tf_length_rotation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 6.283
-      groundtruth_epsilon: 0.001
+      groundtruth:
+        data: 6.283
+        epsilon: 0.001
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 6.283
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 6.283
+        epsilon: 0.1
   tf_velocity_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
   tf_acceleration_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
   tf_jerk_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
   tf_distance_translation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 0
+        epsilon: 0.1
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 0
+        epsilon: 0.1
   tf_distance_rotation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 0
+        epsilon: 0.1
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 0
+        epsilon: 0.1
 testblock_line:
   tf_length_translation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 4.0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 4.0
+        epsilon: 0.1
   tf_length_rotation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 6.283
-      groundtruth_epsilon: 0.001
+      groundtruth:
+        data: 6.283
+        epsilon: 0.001
   tf_velocity_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
   tf_acceleration_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
   tf_jerk_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
   tf_distance_translation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 0
+        epsilon: 0.1
   tf_distance_rotation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 0
+        epsilon: 0.1
 testblock_quadrat:
   tf_length_translation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 8.0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 8.0
+        epsilon: 0.1
   tf_length_rotation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 6.283
-      groundtruth_epsilon: 0.001
+      groundtruth:
+        data: 6.283
+        epsilon: 0.001
   tf_velocity_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
   tf_acceleration_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
   tf_jerk_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
   tf_distance_translation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 0
+        epsilon: 0.1
   tf_distance_rotation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 0
+        epsilon: 0.1
 testblock_all:
   tf_length_translation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 18.283 # =6.283+4+8
-      groundtruth_epsilon: 0.001
+      groundtruth:
+        data: 18.283 # =6.283+4+8
+        epsilon: 0.001
     - topics: [/tf]
       root_frame: world
       measured_frame: reference4
-      groundtruth: 35.0
-      groundtruth_epsilon: 1.9
+      groundtruth:
+        data: 35.0
+        epsilon: 1.9
   tf_length_rotation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 18.849 # =3x6.283
-      groundtruth_epsilon: 0.001
+      groundtruth:
+        data: 18.849 # =3x6.283
+        epsilon: 0.001
     - topics: [/tf]
       root_frame: world
       measured_frame: reference4
-      groundtruth: 19.0
-      groundtruth_epsilon: 1.0
+      groundtruth:
+        data: 19.0
+        epsilon: 1.0
   tf_velocity_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
   tf_acceleration_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 2.0
-      groundtruth_epsilon: 1.999
+      groundtruth:
+        data: 2.0
+        epsilon: 1.999
   tf_jerk_translation:
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 4.0
-      groundtruth_epsilon: 3.999
+      groundtruth:
+        data: 4.0
+        epsilon: 3.999
     - topics: [/tf, /tf_static]
       root_frame: world
       measured_frame: reference1_static
-      groundtruth: 4.0
-      groundtruth_epsilon: 3.999
+      groundtruth:
+        data: 4.0
+        epsilon: 3.999
   tf_distance_translation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 0
+        epsilon: 0.1
   tf_distance_rotation:
     - topics: [/tf]
       root_frame: world
       measured_frame: reference1
-      groundtruth: 0
-      groundtruth_epsilon: 0.1
+      groundtruth:
+        data: 0
+        epsilon: 0.1
