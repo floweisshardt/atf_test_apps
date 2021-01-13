@@ -1,21 +1,22 @@
 # with groundtruth
+testblock_1s:
+  interface:
+    - node: publisher1
+      publishers: 
+        - [topic1, std_msgs/String]
+        - [top*, std_msgs/String]
+    - node: subscriber1
+      subscribers: 
+        - [topic2, std_msgs/Int32]
+testblock_2s:
+  interface:
+    - node: publisher1
+      publishers: 
+        - [topic1, std_msgs/String]
+    - node: subscriber1
+      subscribers: 
+        - [topic2, std_msgs/Int32]
 testblock_3s:
-  interface:
-    - node: publisher1
-      publishers: 
-        - [topic1, std_msgs/String]
-    - node: subscriber1
-      subscribers: 
-        - [topic2, std_msgs/Int32]
-testblock_5s:
-  interface:
-    - node: publisher1
-      publishers: 
-        - [topic1, std_msgs/String]
-    - node: subscriber1
-      subscribers: 
-        - [topic2, std_msgs/Int32]
-testblock_8s:
   interface:
     - node: publisher1
       publishers: 
