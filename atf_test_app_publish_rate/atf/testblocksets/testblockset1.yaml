@@ -1,5 +1,5 @@
 # with groundtruth
-testblock_3s:
+testblock_1s:
   publish_rate:
     - topic: /topic1
       groundtruth:
@@ -9,13 +9,13 @@ testblock_3s:
       groundtruth:
         data: 22
         epsilon: 5
-testblock_5s:
+testblock_2s:
   publish_rate:
     - topic: /topic3
       groundtruth:
         data: 33
         epsilon: 5
-testblock_8s:
+testblock_3s:
   publish_rate:
     - topic: /topic3
       groundtruth:

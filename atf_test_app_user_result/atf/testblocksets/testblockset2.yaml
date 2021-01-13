@@ -1,10 +1,10 @@
 # without groundtruth
-testblock_3s:
+testblock_1s:
   user_result: [{}]
-testblock_5s:
+testblock_2s:
   user_result:
     - groundtruth:
         data: 0.8
         epsilon: 0.2
-testblock_8s:
+testblock_3s:
   user_result: [{}]

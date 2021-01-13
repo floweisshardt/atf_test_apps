@@ -10,6 +10,9 @@ env:
   global:
     - CATKIN_LINT=pedantic
     - NOT_TEST_DOWNSTREAM=true
+    - PYLINT_ARGS="--output-format=parseable --errors-only --ignored-modules=tf2_ros"
+    - PYLINT2_CHECK=true
+    - PYLINT3_CHECK=false
     - PARALLEL_TESTS=true
     - ROS_REPO=ros
     - VERBOSE_OUTPUT=false
@@ -18,6 +21,6 @@ env:
     - ROS_DISTRO=kinetic UPSTREAM_WORKSPACE=file
     - ROS_DISTRO=melodic UPSTREAM_WORKSPACE=file
 install:
-  - git clone --quiet --depth 1 https://github.com/ros-industrial/industrial_ci.git .industrial_ci -b master
+  - git clone --quiet --depth 1 https://github.com/fmessmer/industrial_ci.git .industrial_ci -b master_pylint
 script:
   - .industrial_ci/travis.sh
