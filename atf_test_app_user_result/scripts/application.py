@@ -18,6 +18,7 @@ class Application:
         # user result
         metric_result = MetricResult()
         metric_result.data.data = 0.83
+        metric_result.unit = "my_unit"
         metric_result.groundtruth.result = Groundtruth.SUCCEEDED
         metric_result.groundtruth.error_message = "all ok in application of atf_test"
         self.atf.stop("testblock_1s", metric_result) # user result with groundtruth result
@@ -28,6 +29,7 @@ class Application:
         # user result
         metric_result = MetricResult()
         metric_result.data.data = 0.85
+        metric_result.unit = "my_other_unit"
         self.atf.stop("testblock_2s", metric_result) # user result without groundtruth result
 
         metric_result = MetricResult()
