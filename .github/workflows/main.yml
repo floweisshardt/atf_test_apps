@@ -21,6 +21,7 @@ jobs:
       PYLINT_ARGS: '--output-format=parseable --errors-only --disable=method-hidden'
       PYLINT_CHECK: true
       ROS_REPO: main
+      UPSTREAM_WORKSPACE: .ci.rosinstall
 
     strategy:
       matrix:
