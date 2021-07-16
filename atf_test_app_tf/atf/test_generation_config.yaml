@@ -11,8 +11,8 @@ txt_output: /tmp/atf_test_app_tf/results_txt/                       # Folder for
 json_output: /tmp/atf_test_app_tf/results_json/                     # Folder for the json files output
 yaml_output: /tmp/atf_test_app_tf/results_yaml/                     # Folder for the yaml files output
 
-time_limit_recording: 180.0                                         # Time limit in seconds for recording
-time_limit_analysing: 120.0                                          # Time limit in seconds for analysing
+time_limit_recording: 360.0                                         # Time limit in seconds for recording
+time_limit_analysing: 360.0                                          # Time limit in seconds for analysing
 time_limit_uploading: 60.0                                          # Time limit in seconds for uploading
 
 upload_data: false
